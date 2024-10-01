@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SoccerClub</string>
+    <string name="favorite">Favorite</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="home">Home</string>
+    <string name="setting">Settings</string>
+    <string name="error_message">Data not loaded… \nSomething went wrong!!</string>
+    <string name="dark_mode">Dark Mode\t\t\t</string>
+</resources>

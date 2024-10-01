@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="item_soccer_club_name">Soccer Club\'s name</string>
+    <string name="item_soccer_club_location">Soccer Club\'s location</string>
+</resources>
