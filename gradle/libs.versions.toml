@@ -22,6 +22,8 @@ constraintlayout = "2.1.4"
 lifecycleViewmodelKtx = "2.8.6"
 navigationKtx = "2.8.1"
 dataStore = "1.1.1"
+mockito = "4.4.0"
+leakCanary = "2.10"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -51,8 +53,10 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationKtx" }
-androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "dataStore"}
-
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "dataStore" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockito-inline = { group = "org.mockito", name = "mockito-inline", version.ref = "mockito" }
+leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakCanary"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

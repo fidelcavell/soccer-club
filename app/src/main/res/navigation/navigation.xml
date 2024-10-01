@@ -11,6 +11,7 @@
         android:label="@string/home"
         tools:layout="@layout/fragment_home" />
 
+    <!--suppress AndroidDomInspection -->
     <fragment
         android:id="@+id/navigation_favorite"
         android:name="id.project.favorite.FavoriteFragment"
