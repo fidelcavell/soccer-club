@@ -9,11 +9,15 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import id.project.core.data.source.local.room.SoccerClubDao
 import id.project.core.data.source.local.room.SoccerClubDatabase
+import net.sqlcipher.database.SQLiteDatabase
+import net.sqlcipher.database.SupportFactory
 import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
 class DatabaseModule {
+    private val passPhrase: ByteArray = SQLiteDatabase.getBytes("SoccerClub".toCharArray())
+    private val factory = SupportFactory(passPhrase)
 
     @Singleton
     @Provides
@@ -21,8 +25,10 @@ class DatabaseModule {
         Room.databaseBuilder(
             context = context,
             SoccerClubDatabase::class.java,
-            "SoccerClub.db"
-        ).fallbackToDestructiveMigration().build()
+            "SoccerClub"
+        ).fallbackToDestructiveMigration()
+            .openHelperFactory(factory)
+            .build()
 
     @Provides
     fun provideSoccerClubDao(database: SoccerClubDatabase): SoccerClubDao = database.soccerClubDao()

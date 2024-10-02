@@ -5,7 +5,7 @@
     <string name="home">Home</string>
     <string name="setting">Settings</string>
     <string name="dark_mode">Dark Mode\t\t\t</string>
-    <string name="error_image">Error Image</string>
     <string name="back_button">Back Button</string>
     <string name="soccer_club_image">Soccer Club\'s Image</string>
+    <string name="error_message">Oops.. Data not Found!!</string>
 </resources>

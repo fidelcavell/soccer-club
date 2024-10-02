@@ -48,6 +48,7 @@ dependencies {
     api(libs.material)
     api(libs.glide)
     api(libs.androidx.datastore.preferences)
+    api(libs.lottie)
 
     implementation(libs.room.runtime)
     ksp(libs.room.compiler)
@@ -65,10 +66,10 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
 
+    implementation(libs.android.database.sqlcipher)
+    implementation(libs.androidx.sqlite.ktx)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    testImplementation(libs.mockito.core)
-    testImplementation(libs.mockito.inline)
 }
